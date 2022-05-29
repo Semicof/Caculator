@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.container
+{
+    margin: 100px auto;
+    width: 200px;
+    border: 5px solid burlywood;
+    border-radius: 12px;
+}
+
+.screen
+{
+    background-color: #fff;
+    width: 100%;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+.keyboard
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item  
+{
+    height: 50px;
+    outline: none;
+    border: 0.1px solid #555;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.item:hover{
+    height: 50px;
+    outline: none;
+    border: 0.1px solid #333;
+    background-color: bisque;
+}
+
+.item1
+{
+    grid-column: 1/span 2;
+    background-color:lightpink;
+
+}
+
+.screen .input
+{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 45px;
+    color: #555;
+    z-index: 2;
+}
